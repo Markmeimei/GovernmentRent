@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 头部标题属性 -->
+    <declare-styleable name="HeadTitle">
+        <attr name="titleLeft" format="reference|string" />
+        <attr name="titleCenter" format="reference|string" />
+        <attr name="titleRight" format="reference|string" />
+        <attr name="imgLeft" format="reference" />
+        <attr name="imgRight" format="reference" />
+        <attr name="imgCenter" format="reference" />
+        <attr name="themeColor" format="reference" />
+    </declare-styleable>
+</resources>

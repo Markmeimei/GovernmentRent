@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zxkj.governmentrent.widget.banner_control.BGABanner xmlns:banner="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/views_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180dp"
+        banner:banner_pointGravity="bottom|right"
+        banner:banner_transitionEffect="defaultEffect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_below="@id/views_banner"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_20dp">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:src="@mipmap/img_hot" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="热门"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+</RelativeLayout>

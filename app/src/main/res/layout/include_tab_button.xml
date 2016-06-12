@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/include_tab_button_Focus"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/include_tab_button_FocusImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_include_tab_button_focus_image" />
+
+                <TextView
+                    android:id="@+id/include_tab_button_FocusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="党建聚焦"
+                    android:textColor="@color/text_color2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/include_tab_button_Affairs"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/include_tab_button_AffairsImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_include_tab_button_affairs_image" />
+
+                <TextView
+                    android:id="@+id/include_tab_button_AffairsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="智慧党务"
+                    android:textColor="@color/text_color2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/include_tab_button_ActivityRoom"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/include_tab_button_ActivityRoomImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_include_tab_button_activityroom_image" />
+
+                <TextView
+                    android:id="@+id/include_tab_button_ActivityRoomText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="党员活动室"
+                    android:textColor="@color/text_color2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/include_tab_button_Supermarket"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/include_tab_button_SupermarketImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_include_tab_button_supermarket_image" />
+
+                <TextView
+                    android:id="@+id/include_tab_button_SupermarketText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件超市"
+                    android:textColor="@color/text_color2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/fragment_focus_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fragment_focus_PoliticsNews"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="时政要闻"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <View
+            android:layout_width="@dimen/dimen_0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+        <RadioButton
+            android:id="@+id/fragment_focus_NewProvision"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="最新党规"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/dimen_15sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/fragment_focus_PoliticsNewsPointer"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_color4" />
+
+        <View
+            android:id="@+id/fragment_focus_NewProvisionPointer"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+    </LinearLayout>
+
+    <com.zxkj.governmentrent.widget.viewpager_control.NoScrollViewPager
+        android:id="@+id/fragment_focus_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background" />
+
+</LinearLayout>

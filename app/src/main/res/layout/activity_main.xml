@@ -1,0 +1,52 @@
+<com.zxkj.governmentrent.widget.navigation_control.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_DragLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <!--下层 左边的布局-->
+    <include layout="@layout/include_main_left" />
+    <!--上层 右边的主布局-->
+    <com.zxkj.governmentrent.widget.navigation_control.CustomRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/activity_main_Title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:background="@color/theme_color"
+                android:gravity="bottom">
+
+                <com.zxkj.governmentrent.widget.headTitle.HeadTitle xmlns:title="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/activity_main_HeadTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"
+                    title:imgCenter="@mipmap/img_headtitle"
+                    title:imgLeft="@mipmap/img_menu"
+                    title:imgRight="@mipmap/img_search" />
+            </RelativeLayout>
+            <!--中间内容后面放入Fragment-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/activity_main_Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/background" />
+
+                <include layout="@layout/include_tab_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zxkj.governmentrent.widget.navigation_control.CustomRelativeLayout>
+</com.zxkj.governmentrent.widget.navigation_control.DragLayout>

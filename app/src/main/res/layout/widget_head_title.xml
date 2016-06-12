@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_title_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/head_title_left_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_5dp">
+
+            <ImageView
+                android:id="@+id/head_title_left_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/dimen_40dp"
+                android:maxWidth="@dimen/dimen_40dp" />
+
+            <TextView
+                android:id="@+id/head_title_left_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head_title_right_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/head_title_right_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/head_title_right_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/dimen_40dp"
+                android:maxWidth="@dimen/dimen_40dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/head_title_center_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_toLeftOf="@id/head_title_right_LinearLayout"
+            android:layout_toRightOf="@id/head_title_left_LinearLayout"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_3dp"
+            android:paddingRight="@dimen/dimen_3dp"
+            android:src="@mipmap/img_headtitle" />
+
+        <TextView
+            android:id="@+id/head_title_center_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:visibility="gone"
+            android:maxEms="8"
+            android:paddingLeft="@dimen/dimen_3dp"
+            android:paddingRight="@dimen/dimen_3dp"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

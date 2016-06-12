@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.zxkj.governmentrent.widget.headTitle.HeadTitle xmlns:title="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_HeadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        title:imgLeft="@mipmap/img_arrows_left"
+        title:titleLeft="最新党规" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/activity_news_details_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_news_details_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:singleLine="true"
+                    android:text="2016/04/11"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <TextView
+                    android:id="@+id/activity_news_details_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/dimen_14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5dp"
+                android:background="@color/line_color" />
+
+            <ImageView
+                android:id="@+id/activity_news_details_ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/test_banner01" />
+
+            <TextView
+                android:id="@+id/activity_news_details_Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

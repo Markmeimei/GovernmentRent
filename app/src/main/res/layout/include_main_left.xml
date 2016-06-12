@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_main_left_background"
+    android:paddingTop="@dimen/dimen_70dp">
+
+    <ImageView
+        android:id="@+id/include_main_left_ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:paddingLeft="@dimen/dimen_32dp"
+        android:paddingRight="@dimen/dimen_100dp"
+        android:src="@mipmap/img_headtitle" />
+
+        <TextView
+            android:id="@+id/include_main_left_Versions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_32dp"
+            android:paddingRight="@dimen/dimen_100dp"
+            android:text="版本 V1.0  至信科技"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <ListView
+            android:id="@+id/include_main_left_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include_main_left_ImageView"
+            android:layout_above="@id/include_main_left_Versions"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_70dp"
+            android:scrollbars="none" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色-->
+    <color name="theme_color">#BF0000</color>
+    <!--背景颜色-->
+    <color name="background">#F5F5F5</color>
+    <!--线的颜色-->
+    <color name="line_color">#D6D6D6</color>
+    <!--字体颜色-->
+    <color name="text_color">#6B6B6B</color>
+    <color name="text_color2">#BBBBBB</color>
+    <color name="text_color3">#333333</color>
+    <color name="text_color4">#ED823B</color>
+    <!--智慧党务字体颜色-->
+    <color name="color_affairs_01">#396690</color>
+    <color name="color_affairs_02">#E15F5F</color>
+    <color name="color_affairs_03">#E24540</color>
+    <color name="color_affairs_04">#68879B</color>
+    <color name="color_affairs_05">#D17F01</color>
+    <color name="color_affairs_06">#3D7FCB</color>
+    <!--党员活动室字体颜色-->
+    <color name="color_activityroom_01">#DcB500</color>
+    <color name="color_activityroom_02">#3E8ED5</color>
+    <color name="color_activityroom_03">#E04540</color>
+    <color name="color_activityroom_04">#78A300</color>
+    <color name="color_activityroom_05">#E0523D</color>
+    <color name="color_activityroom_06">#F9B8A8</color>
+
+    <color name="color_9C0000">#9C0000</color>
+    <color name="color_DDDDDD">#DDDDDD</color>
+    <color name="white">#FFFFFF</color>
+</resources>
